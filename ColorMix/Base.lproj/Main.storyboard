@@ -22,34 +22,58 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uBW-G5-abD">
-                                <rect key="frame" x="183" y="433" width="49" height="31"/>
+                                <rect key="frame" x="20" y="364" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="x8Q-sp-fPq"/>
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lBR-WU-J6n">
-                                <rect key="frame" x="183" y="482" width="49" height="31"/>
+                                <rect key="frame" x="20" y="433" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="VJj-Te-IEI"/>
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="V9c-1H-6Js">
-                                <rect key="frame" x="184" y="530" width="49" height="31"/>
+                                <rect key="frame" x="21" y="501" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="dIh-7Q-Yol"/>
                                 </connections>
                             </switch>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Uc1-Lh-B84">
+                                <rect key="frame" x="148" y="434" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderChanged3:" destination="BYZ-38-t0r" eventType="valueChanged" id="N6z-OG-Pba"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="2E6-03-L6x">
+                                <rect key="frame" x="148" y="366" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderChanged3:" destination="BYZ-38-t0r" eventType="valueChanged" id="9CW-Gf-hDD"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ack-gx-lTp">
+                                <rect key="frame" x="148" y="502" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderChanged3:" destination="BYZ-38-t0r" eventType="valueChanged" id="KZp-iX-aWp"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="blueSlider" destination="ack-gx-lTp" id="qCL-1b-wPp"/>
                         <outlet property="blueSwitch" destination="V9c-1H-6Js" id="98L-ng-wH6"/>
                         <outlet property="colorView" destination="7zW-Uc-xhz" id="U9w-xq-Smo"/>
+                        <outlet property="greenSlider" destination="Uc1-Lh-B84" id="Mim-Bh-MgF"/>
                         <outlet property="greenSwitch" destination="lBR-WU-J6n" id="KK3-db-jiy"/>
+                        <outlet property="redSlider" destination="2E6-03-L6x" id="mGf-A0-OOe"/>
                         <outlet property="redSwitch" destination="uBW-G5-abD" id="URN-X9-sGI"/>
                     </connections>
                 </viewController>

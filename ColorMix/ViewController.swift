@@ -21,13 +21,23 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var blueSwitch: UISwitch!
     
+    @IBOutlet weak var redSlider: UISlider!
+    
+    @IBOutlet weak var greenSlider: UISlider!
+    
+    @IBOutlet weak var blueSlider: UISlider!
+    
+    @IBAction func sliderChanged3(_ sender: Any) {
+        updateColor()
+    }
+    
     func updateColor() {
         var red: CGFloat = 0
         var green: CGFloat = 0
         var blue: CGFloat = 0
-        if redSwitch.isOn { red = 1 }
-        if greenSwitch.isOn { green = 1 }
-        if blueSwitch.isOn { blue = 1 }
+        if redSwitch.isOn { red = CGFloat(redSlider.value) }
+        if greenSwitch.isOn { green = CGFloat(greenSlider.value) }
+        if blueSwitch.isOn { blue = CGFloat(blueSlider.value) }
         let color = UIColor(red: red, green: green, blue: blue, alpha: 1)
         colorView.backgroundColor = color
     }
